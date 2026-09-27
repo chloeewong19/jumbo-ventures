@@ -491,7 +491,7 @@
       var pN = easeOut((t - 0.85) / 1.5), oyN = (1 - pN) * 70;
       drawLayer(LN, pN);
       ctx.globalAlpha = pN;
-      ctx.font = '600 10px "Object Sans", "Plus Jakarta Sans", system-ui, sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.font = '600 10px "Geist", system-ui, sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       ctx.fillStyle = '#FFFFFF'; ctx.fillText('Medford/Tufts', 950, 944.5 + oyN);
       drawTrain(trainX(t), oyN);
       ctx.globalAlpha = 1;
@@ -508,7 +508,7 @@
         if (rp >= 1) { ctx.beginPath(); ctx.arc(P[3][0], P[3][1], 4.5, 0, Math.PI * 2); ctx.fill(); }
         var la = easeOut((t - 2.8) / 0.8);
         if (la > 0) {
-          ctx.globalAlpha = la; ctx.fillStyle = '#5B6473'; ctx.font = '600 12px "Object Sans", "Plus Jakarta Sans", system-ui, sans-serif'; ctx.textBaseline = 'alphabetic';
+          ctx.globalAlpha = la; ctx.fillStyle = '#5B6473'; ctx.font = '600 12px "Geist", system-ui, sans-serif'; ctx.textBaseline = 'alphabetic';
           try { ctx.letterSpacing = '1.4px'; } catch (err) {}
           var lbl = function (txt, x, y, align) {
             var w = ctx.measureText(txt).width, lx = align === 'right' ? x - w : x;
